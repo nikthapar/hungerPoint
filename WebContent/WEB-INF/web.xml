@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:web="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd http://xmlns.jcp.org/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.4">
+  <display-name>HelloWorld Application</display-name>
+  <description>
+        This is a simple web application with a source code organization
+        based on the recommendations of the Application Developer's Guide.
+    </description>
+    <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>foodList.java</welcome-file>
+    </welcome-file-list>
+  <servlet>
+    <servlet-name>foodList</servlet-name>
+    <servlet-class>foodList</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>foodList</servlet-name>
+    <url-pattern>/foodList</url-pattern>
+  </servlet-mapping>
+</web-app>
