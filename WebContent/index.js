@@ -17,13 +17,13 @@ let renderSearch=function(data){
     for ( var i=0;i<data.restaurants.length;i++ ) {    	
         htmlText += '<div class="div-conatiner">';
         htmlText += '<div class="col_sm_4">';
-        htmlText += '<p class="p-name">' + data.restaurants[i].restaurant.name + '</p>';
-        htmlText += '<p class="p-loc">Address: ' + data.restaurants[i].restaurant.location.address + '</p>';
-        htmlText += '<p class="p-desc"> Cuisine type: ' + data.restaurants[i].restaurant.cuisines + '</p>';
+        htmlText += '<p>' + data.restaurants[i].restaurant.name + '</p>';
+        htmlText += '<p>Address: ' + data.restaurants[i].restaurant.location.address + '</p>';
+        htmlText += '<p> Cuisine type: ' + data.restaurants[i].restaurant.cuisines + '</p>';
         //htmlText += "<img src="+data.restaurants[i].restaurant.thumb+"height='250px' width='250px'alt='image'</img>";
         htmlText += '</div>';
         htmlText += '<br>';
-        htmlText += '<button onclick="sendResult(\''+data.restaurants[i].restaurant.name+'\',\''+data.restaurants[i].restaurant.location.address+'\',\''+data.restaurants[i].restaurant.cuisines+'\'\)">Add to Favourites</button>'+"<br>";
+        htmlText += '<button  class="btn btn-primary" onclick="sendResult(\''+data.restaurants[i].restaurant.name+'\',\''+data.restaurants[i].restaurant.location.address+'\',\''+data.restaurants[i].restaurant.cuisines+'\'\)">Add to Favourites</button>'+"<br>";
         htmlText += '<hr>';
     }
 document.getElementById('show').insertAdjacentHTML('afterend',nav);

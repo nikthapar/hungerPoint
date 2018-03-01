@@ -11,15 +11,15 @@
 
 <body>
 <div class="container">
-<div class="jumbotron">
+<div class="jumbotron logo">
     <h1 class="text-center">HungerPoint</h1>
 </div> 
 </div>   
 <div class="container">
 <div class="jumbotron">
     <div class="row form-group form-inline text-center">
-        <input type="text" name="city" id="city" placeholder="City Name">    
-        <button type="submit" onClick="getresult()">Search Restaurant</button>
+        <input type="text" name="city" id="city" placeholder="Restaurant Name">    
+        <button type="submit" class="btn btn-primary" onClick="getresult()">Search Restaurant</button>
     </div>
 </div>
     <div id="show"></div>

@@ -1,1 +1,4 @@
 @charset "UTF-8";
+.logo{
+	background-image: url("logo.jpg");
+}
