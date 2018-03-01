@@ -5,18 +5,34 @@
         This is a simple web application with a source code organization
         based on the recommendations of the Application Developer's Guide.
     </description>
+  <servlet>
+  	<description>
+  	</description>
+  	<display-name>Favourite</display-name>
+  	<servlet-name>Favourite</servlet-name>
+  	<servlet-class>Favourite</servlet-class>
+  </servlet>
+  <servlet>
+  	<description>
+  	</description>
+  	<display-name>Fav</display-name>
+  	<servlet-name>Fav</servlet-name>
+  	<servlet-class>com.hotel.Fav</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>Favourite</servlet-name>
+  	<url-pattern>/Favourite</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>Fav</servlet-name>
+  	<url-pattern>/fav</url-pattern>
+  </servlet-mapping>
     <welcome-file-list>
     <welcome-file>index.html</welcome-file>
     <welcome-file>index.htm</welcome-file>
     <welcome-file>index.jsp</welcome-file>
-    <welcome-file>foodList.java</welcome-file>
     </welcome-file-list>
-  <servlet>
-    <servlet-name>foodList</servlet-name>
-    <servlet-class>foodList</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>foodList</servlet-name>
-    <url-pattern>/foodList</url-pattern>
-  </servlet-mapping>
+
+
+
 </web-app>
