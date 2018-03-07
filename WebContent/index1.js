@@ -1,14 +1,9 @@
 function getresult()
 {
-
 	var baseURL="https://developers.zomato.com/api/v2.1/search?entity_id=";
-
 	var endurl ="&entity_type=city&q=";
-
 	var apikey="&apikey=69356ad3b4004acc1d25c297342a041a";
-
 	var place = document.getElementById('inp').value;
-
 	let url=''.concat(baseURL,place,endurl,place,apikey);
 	fetch(url)
 	.then(result=>result.json())
@@ -16,16 +11,11 @@ function getresult()
 		document.getElementById('msg').innerHTML=renderSearch(data);
 	})
 }
-
-
 let renderSearch=function(data){
 	var htmlText = '';
-
-	var str2="hello";
+	var str2="Welcome";
 	for ( var i=0;i<19;i++ ) {
-
-		var str="" +i;
-		
+		var str="" +i;		
 		htmlText += '<div class="container">';
 		htmlText += '<div class="col_sm_4">';
 		htmlText += '<p class="p-name"> Name: ' + data.restaurants[i].restaurant.name + '</p>';
@@ -38,15 +28,9 @@ let renderSearch=function(data){
 		htmlText += '</a>';
 		htmlText += '<button id='+str+ '>Add to Favourites list</button>';
 		htmlText += '<hr>';
-
-	}
-	
+	}	
 	document.getElementById('msg').insertAdjacentHTML('afterend',htmlText);
-
-
-
-
-
+	
 	document.getElementById("0").addEventListener("click", function(){
 		$.ajax({
 			type :'POST',
@@ -59,8 +43,6 @@ let renderSearch=function(data){
 				$('#result1').html(result);
 			}
 		});
-
-
 	})
 	document.getElementById("1").addEventListener("click", function(){
 		$.ajax({
@@ -74,8 +56,6 @@ let renderSearch=function(data){
 				$('#result1').html(result);
 			}
 		});
-
-
 	})
 	document.getElementById("2").addEventListener("click", function(){
 		$.ajax({
@@ -89,8 +69,6 @@ let renderSearch=function(data){
 				$('#result1').html(result);
 			}
 		});
-
-
 	})
 	document.getElementById("3").addEventListener("click", function(){
 		$.ajax({
@@ -104,8 +82,6 @@ let renderSearch=function(data){
 				$('#result1').html(result);
 			}
 		});
-
-
 	})
 	document.getElementById("4").addEventListener("click", function(){
 		$.ajax({
@@ -119,8 +95,6 @@ let renderSearch=function(data){
 				$('#result1').html(result);
 			}
 		});
-
-
 	})
 	document.getElementById("5").addEventListener("click", function(){
 		$.ajax({
@@ -134,8 +108,6 @@ let renderSearch=function(data){
 				$('#result1').html(result);
 			}
 		});
-
-
 	})
 	document.getElementById("6").addEventListener("click", function(){
 		$.ajax({
@@ -149,8 +121,6 @@ let renderSearch=function(data){
 				$('#result1').html(result);
 			}
 		});
-
-
 	})
 	document.getElementById("7").addEventListener("click", function(){
 		$.ajax({
@@ -164,8 +134,6 @@ let renderSearch=function(data){
 				$('#result1').html(result);
 			}
 		});
-
-
 	})
 	document.getElementById("8").addEventListener("click", function(){
 		$.ajax({
@@ -179,8 +147,6 @@ let renderSearch=function(data){
 				$('#result1').html(result);
 			}
 		});
-
-
 	})
 	document.getElementById("9").addEventListener("click", function(){
 		$.ajax({
@@ -194,8 +160,6 @@ let renderSearch=function(data){
 				$('#result1').html(result);
 			}
 		});
-
-
 	})
 	document.getElementById("10").addEventListener("click", function(){
 		$.ajax({
@@ -209,8 +173,6 @@ let renderSearch=function(data){
 				$('#result1').html(result);
 			}
 		});
-
-
 	})
 	document.getElementById("11").addEventListener("click", function(){
 		$.ajax({
@@ -224,8 +186,6 @@ let renderSearch=function(data){
 				$('#result1').html(result);
 			}
 		});
-
-
 	})
 	document.getElementById("12").addEventListener("click", function(){
 		$.ajax({
@@ -239,8 +199,6 @@ let renderSearch=function(data){
 				$('#result1').html(result);
 			}
 		});
-
-
 	})
 	document.getElementById("13").addEventListener("click", function(){
 		$.ajax({
@@ -254,8 +212,6 @@ let renderSearch=function(data){
 				$('#result1').html(result);
 			}
 		});
-
-
 	})
 	document.getElementById("14").addEventListener("click", function(){
 		$.ajax({
@@ -269,8 +225,6 @@ let renderSearch=function(data){
 				$('#result1').html(result);
 			}
 		});
-
-
 	})
 	document.getElementById("15").addEventListener("click", function(){
 		$.ajax({
@@ -284,8 +238,6 @@ let renderSearch=function(data){
 				$('#result1').html(result);
 			}
 		});
-
-
 	})
 	document.getElementById("16").addEventListener("click", function(){
 		$.ajax({
@@ -299,8 +251,6 @@ let renderSearch=function(data){
 				$('#result1').html(result);
 			}
 		});
-
-
 	})
 	document.getElementById("17").addEventListener("click", function(){
 		$.ajax({
@@ -314,8 +264,6 @@ let renderSearch=function(data){
 				$('#result1').html(result);
 			}
 		});
-
-
 	})
 	document.getElementById("18").addEventListener("click", function(){
 		$.ajax({
@@ -329,19 +277,14 @@ let renderSearch=function(data){
 				$('#result1').html(result);
 			}
 		});
-
-
 	})
-
 }
 function get_favourites(){
 	var htmlText = '';
-
 	$.ajax({
 		type :'POST',
 		data :{
 			obj:"display"
-
 		},
 		url  :'Display_favourites',
 		success: function(result){
@@ -354,10 +297,8 @@ function get_favourites(){
 				i=i+2;
 			}
 			document.getElementById('fa').insertAdjacentHTML('afterend',htmlText);
-
 		}
 	});
-
 }
 
 

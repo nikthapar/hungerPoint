@@ -1,7 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
@@ -24,7 +23,7 @@
 <body style="background-color: #D4F7EC">
 	<div class="container">
 		<h1>
-			<center>Online Restaurant finder</center>
+			<center>HungerPoint</center>
 		</h1>
 	</div>
 	<div class="container">
@@ -34,11 +33,10 @@
 					<p>Your top ten favourite restaurants</p>
 				</center>
 				<center>
-					<button onclick="get_favourites()">View favourites</button>
+					<button onclick="get_favourites()">Favourites List</button>
 				</center>
 				<p></p>
 				<p id="fa" style="font-family: 'Cookie', cursive"></p>
-
 			</div>
 		</div>
 	</div>

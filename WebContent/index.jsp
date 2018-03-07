@@ -14,7 +14,7 @@
 </head>
 <body style="background-color: #D4F7EC">
 <div class="container">
-      <h1> <center> Online Restaurant finder </center> </h1>
+      <h1> <center> HungerPoint </center> </h1>
 </div>
 <div class="container">
   <div class="row">
@@ -24,12 +24,8 @@
   <button onclick="getresult()">Go</button>
   <script type="text/javascript" src="index1.js"></script>
   <p id ="msg"></p>
-  </div></div></div>
-
-			
-				
-					
-					
-
+  </div>
+  </div>
+</div>													
 </body>
 </html>
